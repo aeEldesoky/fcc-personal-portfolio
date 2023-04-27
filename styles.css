@@ -19,7 +19,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Format navigation bar */
+/*** Format navigation bar ***/
 #navbar {
   top: 0;
   right: 0;
@@ -38,14 +38,14 @@ body {
   color: var(--main-font);
   text-decoration: none;
   padding: 2vw;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 #navbar a:hover {
   background-color: var(--projects-background);
 }
 
-/* Format welcome section */
+/*** Format welcome section ***/
 #welcome-section {
   height: 100vh;
   text-align: center;
@@ -63,10 +63,10 @@ h1 {
   color: var(--main-font);
 }
 
-/* Format projects section */
+/*** Format projects section ***/
 #projects {
-    background-color: var(--projects-background);
-    padding-bottom: 6vh;
+  background-color: var(--projects-background);
+  padding-bottom: 6vh;
 }
 
 #projects h2 {
@@ -121,6 +121,53 @@ h1 {
   content: " />";
 }
 
+/*** Format contact section ***/
+#contact {
+  text-align: center;
+  height: 100vh;
+  color: var(--main-font);
+  background-color: var(--main-background);
+  padding-top: 1vh;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  padding-top: 20vh;
+}
+
+#contact p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-bottom: 3rem;
+}
+
+#social {
+  margin: auto;
+  width: 60%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-group a {
+  color: var(--main-font);
+  text-decoration: none;
+}
+
+.social-group {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.social-group:hover {
+  top: 1vh;
+  cursor: pointer;
+}
+
+/*** Media Query ***/
 /* for small devices */
 @media only screen and (max-width: 600px) {
   #project-tiles {
@@ -129,12 +176,17 @@ h1 {
 }
 
 #profile-button {
-    width: 10vw;
-    margin: auto;
-    text-align: center;
-    padding: 1rem;
-    color: var(--main-font);
-    background-color: var(--main-background);
+  width: 10vw;
+  margin: 3vh auto auto auto;
+  text-align: center;
+  padding: 1rem;
+  color: var(--main-font);
+  background-color: var(--main-background);
+}
+
+#profile-button:hover {
+  background-color: var(--menu-background);
+  cursor: pointer;
 }
 /* for medium devices */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
