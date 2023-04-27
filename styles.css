@@ -11,7 +11,29 @@ body {
 }
 /* Format navigation bar */
 #navbar {
+  top: 0;
+  right: 0;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: darkred;
+  padding: 2vw 2vw 2vw 80vw;
+}
+
+#navbar li {
+  list-style-type: none;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 2vw;
+    font-size: large;
+
+}
+
+#navbar a:hover {
+    background-color: slateblue;
 }
 
 #project-tiles {
@@ -26,7 +48,6 @@ body {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 1.2vw;
 }
 
 /* Add tag symbols around project caption */
@@ -44,7 +65,7 @@ body {
 
 }
 .image-caption {
-    padding-top: 2vh;
+    padding-top: 1vh;
     height: 20%;
 }
 
