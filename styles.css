@@ -66,7 +66,7 @@ h1 {
 /* Format projects section */
 #projects {
     background-color: var(--projects-background);
-    padding-bottom: 2vh;
+    padding-bottom: 6vh;
 }
 
 #projects h2 {
