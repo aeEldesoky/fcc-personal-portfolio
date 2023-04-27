@@ -111,16 +111,20 @@ h1 {
 }
 
 /* Add tag symbols around project caption */
-.project-link:hover .image-caption:before {
+
+.project-tile:hover .image-caption:before {
   color: var(--description-font);
   content: "< ";
 }
 
-.project-link:hover .image-caption:after {
+.project-tile:hover .image-caption:after {
   color: var(--description-font);
   content: " />";
 }
 
+.image-caption::before, .image-caption::after {
+    transition: all 250ms;
+}
 /*** Format contact section ***/
 #contact {
   text-align: center;
@@ -167,6 +171,32 @@ h1 {
   cursor: pointer;
 }
 
+/*** Format footer ***/
+footer hr {
+    margin-top: 0;
+    border: 3px solid var(--menu-background);
+}
+
+footer {
+    background-color: var(--main-background);
+    color: var(--main-font);
+    height: 15vh;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.copyright {
+    position: absolute;
+    right: 5vw;
+}
+
+.footer-note {
+    position: absolute;
+    left: 5vw;
+}
+
 /*** Media Query ***/
 /* for small devices */
 @media only screen and (max-width: 600px) {
@@ -182,6 +212,7 @@ h1 {
   padding: 1rem;
   color: var(--main-font);
   background-color: var(--main-background);
+  transition: background-color ease 0.5s;
 }
 
 #profile-button:hover {
