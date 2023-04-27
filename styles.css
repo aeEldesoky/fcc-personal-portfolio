@@ -47,11 +47,10 @@ body {
 
 /* Format welcome section */
 #welcome-section {
-  margin-top: 10vh;
+  height: 100vh;
   text-align: center;
   background-color: var(--main-background);
   padding-top: 25vh;
-  padding-bottom: 25vh;
 }
 
 #welcome-section p {
@@ -65,13 +64,27 @@ h1 {
 }
 
 /* Format projects section */
+#projects {
+    background-color: var(--projects-background);
+    padding-bottom: 2vh;
+}
+
+#projects h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--main-font);
+  margin: 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 3rem;
+}
+
 #project-tiles {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: var(--projects-background);
   grid-auto-columns: minmax(400px, auto);
   gap: 3vw;
-  padding: 3vw;
+  padding: 2vw;
 }
 
 #project-tiles a {
@@ -115,6 +128,14 @@ h1 {
   }
 }
 
+#profile-button {
+    width: 10vw;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    color: var(--main-font);
+    background-color: var(--main-background);
+}
 /* for medium devices */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   #project-tiles {
