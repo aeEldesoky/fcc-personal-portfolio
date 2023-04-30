@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 /*** Format navigation bar ***/
@@ -148,7 +149,6 @@ h1 {
 
 #social {
   margin: auto;
-  width: 60%;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -171,30 +171,23 @@ h1 {
   cursor: pointer;
 }
 
-/*** Format footer ***/
-footer hr {
-    margin-top: 0;
+hr {
+  margin: 0;
     border: 3px solid var(--menu-background);
 }
+
+/*** Format footer ***/
 
 footer {
     background-color: var(--main-background);
     color: var(--main-font);
-    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer p {
-    display: inline-block;
     font-size: 1.2rem;
-}
-.copyright {
-    position: absolute;
-    right: 5vw;
-}
-
-.footer-note {
-    position: absolute;
-    left: 5vw;
+    padding-left: 10vw;
 }
 
 /*** Media Query ***/
@@ -203,10 +196,12 @@ footer p {
   #project-tiles {
     grid-template-columns: 1fr;
   }
+
 }
 
 #profile-button {
-  width: 10vw;
+  min-width: 10vw;
+  max-width: 30%;
   margin: 3vh auto auto auto;
   text-align: center;
   padding: 1rem;
