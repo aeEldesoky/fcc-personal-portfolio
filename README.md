@@ -2,7 +2,7 @@
 
 ## Description
 
-View a live demo at [Personal Portfolio]( https://amira-ezz-eldin.github.io/fcc-personal-portfolio/)
+View a live demo at [Personal Portfolio](https://aeeldesoky.github.io/fcc-personal-portfolio/)
 
 This project is a part of the [Free Code Camp (FCC)](https://www.freecodecamp.org) "Responsive Web Design" certificate requirements.
 
